@@ -99,21 +99,24 @@ query_posts(array(
               <div class="post-content">
             
 	            <?php // Display post title ?>
-	           <h2>
+	           <!-- <h2>
 		           	<a href="<?php the_permalink(); ?>">
 		           		<?php echo $term->name; ?>
 		           	</a>
-	           	</h2>
+	           	</h2> -->
 	           
               </div><!-- #entry -->
           </div><!-- #box-content -->
         
         </div><!-- #box -->
     <?php endforeach; //endwhile; ?>
+    
 </div><!-- #sort -->
 
 
-
+    <div class="page-desc center">
+        <?php the_content(); ?>
+    </div>
 
 <?php //endif; ?>
 

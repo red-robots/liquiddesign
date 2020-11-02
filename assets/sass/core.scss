@@ -2251,7 +2251,7 @@ a.filter-btn, a.comment span{
 		margin-bottom: 15px;
 		margin-top: 0 !important;
 		margin-right: 0;
-		float: none;
+		// float: none;
 	}
 	
 	#logo a{
@@ -2262,7 +2262,7 @@ a.filter-btn, a.comment span{
 		display: block;
         width: 30%;
         max-width: 400px;
-		float: right;
+		// float: right;
 		margin-top: -20px;
 		
 	}
@@ -2322,19 +2322,28 @@ a.filter-btn, a.comment span{
 		width: 95%;
 		margin: auto;
 	}
-	.header-nav select {
-		width: 30%;
-		float: right;
-		margin-bottom: 10px;	
+	.header-nav {
+		width: 100%;
+		clear: both;
+		padding: 20px 0;
+		select {
+			width: 30%;
+			// float: right;
+			margin: 0 auto;
+			padding: 10px;
+		}	
 	}
 	.headernavfloatright {
-		margin-top: -40px;
+		margin-top: 20px;
 		margin-bottom: 10px;
 		width: 95%;	
 	}
 	#site-info {
-		width: 100%;
+		// width: 100%;
 		margin-left: -10px;
+	}
+	#homepagecontainer {
+		min-height: 100px;
 	}
 	/* ********************************
 				Gallery Posts 
@@ -2342,7 +2351,7 @@ a.filter-btn, a.comment span{
 	
 	#grid{
 		padding: 0;
-		
+		clear: both;
 	}
 	
 	.sort{
@@ -2503,8 +2512,8 @@ margin: 20px 0 0 0 ; }
 
 	}
 	.orange-one, .orange-two {
-		background-color: rgba($color-orange, .5);
-		background-blend-mode: multiply;
+		// background-color: rgba($color-orange, .5);
+		// background-blend-mode: multiply;
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -2533,7 +2542,7 @@ margin: 20px 0 0 0 ; }
 	}
 	.cop {
 		color: #fff;
-		text-transform: uppercase;
+		// text-transform: uppercase;
 		line-height: 1.2;
 		h1, h2 {
 			color: #fff;
@@ -2555,5 +2564,8 @@ margin: 20px 0 0 0 ; }
 	font-weight: 500;
 	@media screen and (max-width: 960px) {
 		width: 90%;
+	}
+	&.center {
+		text-align: center;
 	}
 }

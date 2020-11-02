@@ -17,7 +17,7 @@ if( $featBanner ):
     </div>
     
   </div>
-  <div class="orange-two"></div>
+  <!-- <div class="orange-two"></div> -->
   <!-- <img src="<?php echo $featBanner['url']; ?>"> -->
   <div class="the-image" style="background-image: url(<?php echo $featBanner['url']; ?>);"></div>
 </div>
