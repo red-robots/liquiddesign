@@ -9,17 +9,25 @@ $featBanner = get_field('featured_banner',$termOb);
 if( $featBanner ):
 ?>
 <div class="featured-banner">
+    <div class="blackcover"></div>
   <div class="orange-one">
     <div class="cop">
       <h1><?php echo $termOb->name; ?></h1>
       <h2><?php echo $termOb->taxonomy; ?></h2>
-      <?php echo term_description(); ?>
+      <div class="desc"><?php echo term_description(); ?></div>
     </div>
     
   </div>
   <!-- <div class="orange-two"></div> -->
   <!-- <img src="<?php echo $featBanner['url']; ?>"> -->
-  <div class="the-image" style="background-image: url(<?php echo $featBanner['url']; ?>);"></div>
+  
+  <!-- <div class="the-image" style="background-image: url(<?php echo $featBanner['url']; ?>);"> -->
+    <div class="the-image">
+        <img src="<?php echo $featBanner['url']; ?>">
+    </div>
+    <div class="mobile">
+        <?php echo term_description(); ?>
+    </div>
 </div>
 
 <?php endif; ?>
