@@ -81,13 +81,13 @@ query_posts(array(
                     </a>
                    
                     
-                    <div class="actions">
+                 <!--   <div class="actions">
 	    				<h2>
 				           	<a href="<?php echo $termLink; ?>">
 				           		<?php echo $term->name; ?>
 				           	</a>
 			           	</h2>
-                 	</div><!-- #actions --> 
+                 	</div> #actions --> 
                     
                     
                 </div><!-- #img-container -->

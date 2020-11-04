@@ -126,7 +126,7 @@ get_header('full'); ?>
   <div class="spacer"></div>          
  <div class="subsection">
     <div class="sub-section">
-    <h1 class="page-title"><?php the_title();  ?></h1>
+    <!-- <h1 class="page-title"><?php the_title();  ?></h1> -->
     </div>
     </div>
             

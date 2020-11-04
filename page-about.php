@@ -110,7 +110,7 @@ if ( have_posts() ) :
                     <?php endif; ?>
                     
                     <div class="actions">
-    				<h2><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" rel="bookmark">
+    				<!-- <h2><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" rel="bookmark">
 	      			
 					
                     <?php if ( get_post_meta($post->ID, 'Alt Title', true) ) { ?>
@@ -121,7 +121,7 @@ if ( have_posts() ) :
                     
                     
                     
-                    </a></h2>
+                    </a></h2> -->
                     <ul>
   <?php
   //wp_list_pages('title_li=&child_of='.$post->ID.'&depth=1'); ?>
