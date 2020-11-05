@@ -42,6 +42,8 @@ caption{padding-bottom:1em}
 h1,h2,h3,h4,h5,h6,strong,b,dt,th{font-weight:bold}
 h5,h6{font-size:1em}
 em,i,blockquote,q,cite{font-style:italic}
+@font-face{font-family:ApexBook;src:url("fonts/ApexNew-Book.otf") format("opentype")}
+@font-face{font-family:ApexMed;font-weight:bold;src:url("fonts/ApexNew-Medium.otf") format("opentype")}
 html{background:#fff}
 body{background:#f0f0f0 url(images/noise-2.png) repeat;font-size:12px;color:#4b5054;font-family:"Oswald",Arial,Helvetica,sans-serif;font-weight:300;position:relative;margin:0;padding:0}
 body.single{position:relative;margin:0;padding:0}
@@ -422,9 +424,11 @@ a.filter-btn,a.comment span{text-shadow:0 1px #FFF}
 .featured-banner .orange-two{width:60%;z-index:2}
 .featured-banner .the-image{width:100%;z-index:1;position:relative}
 .featured-banner .cop{color:#fff;line-height:1.2}
+.featured-banner .cop p{font-family:ApexBook;font-weight:200}
+.featured-banner .cop p strong{font-family:ApexMed;font-weight:bold}
 .featured-banner .cop h1,.featured-banner .cop h2{color:#fff}
-.featured-banner .cop h1{font-size:3rem;font-weight:400;margin:0}
-.featured-banner .cop h2{font-size:2.8rem}
+.featured-banner .cop h1{font-size:3rem;font-weight:400;margin:0;font-family:ApexMed}
+.featured-banner .cop h2{font-size:2.8rem;text-transform:lowercase}
 .featured-banner .mobile{display:none}
 .page-desc{width:920px;margin:40px auto;font-size:1.3rem;font-weight:500}
 .page-desc.center{text-align:center}
@@ -435,7 +439,7 @@ a.filter-btn,a.comment span{text-shadow:0 1px #FFF}
 .featured-banner .the-image{position:relative}
 }@media screen and (max-width:960px){.featured-banner .blackcover{width:100%;height:100%;position:absolute;z-index:10;background:black;background:-webkit-gradient(linear,left bottom,left top,from(rgba(0,0,0,0.492034)),to(rgba(0,0,0,0.136292)));background:linear-gradient(0,rgba(0,0,0,0.492034) 0,rgba(0,0,0,0.136292) 100%)}
 .featured-banner .orange-one{width:90%}
-.featured-banner .cop h1{font-size:2rem}
+.featured-banner .cop h1{font-size:2.3rem}
 .featured-banner .cop h2{font-size:1.8rem}
 .page-desc{width:90%}
 }@media screen and (max-width:768px) and (orientation:portrait){.out{background-color:#FFF;width:100%;margin-top:20px;padding-top:30px;padding-right:10px;padding-bottom:10px;padding-left:10px}

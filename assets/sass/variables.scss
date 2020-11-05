@@ -4,10 +4,17 @@ $deskwidth: 1024px;
 
 /*
 
-@media screen and (max-width: 1024px) {
-	
-}
-
+Fonts 
 
 
 */
+@font-face {
+    font-family: ApexBook;
+    src: url("fonts/ApexNew-Book.otf") format("opentype");
+}
+
+@font-face {
+    font-family: ApexMed;
+    font-weight: bold;
+    src: url("fonts/ApexNew-Medium.otf") format("opentype");
+}

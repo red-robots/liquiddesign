@@ -2588,6 +2588,14 @@ a.filter-btn, a.comment span{
 		color: #fff;
 		// text-transform: uppercase;
 		line-height: 1.2;
+		p {
+			font-family: ApexBook;
+			font-weight: 200;
+			strong {
+				font-family: ApexMed;
+				font-weight: bold;
+			}
+		}
 		h1, h2 {
 			color: #fff;
 		}
@@ -2595,12 +2603,14 @@ a.filter-btn, a.comment span{
 			font-size: 3rem;
 			font-weight: 400;
 			margin: 0;
+			font-family: ApexMed;
 			@media screen and (max-width: 960px) {
-				font-size: 2rem;
+				font-size: 2.3rem;
 			}
 		}
 		h2 {
 			font-size: 2.8rem;
+			text-transform: lowercase;
 			@media screen and (max-width: 960px) {
 				font-size: 1.8rem;
 			}
