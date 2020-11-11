@@ -7,9 +7,22 @@ var current_page_width = 0;
 jQuery.noConflict();
 
 
+jQuery('.openPanel').click( function() {
+    // console.log('this works');
+    jQuery('.panel').addClass('open');
+ });
 
+jQuery('.single-proj').scroll( function() {
+    // console.log('this works');
+    jQuery('.panel').addClass('open');
+ });
+jQuery('.closePanel').click( function() {
+    // console.log('this works');
+    jQuery('.panel').removeClass('open');
+ });
 
-
+// $('.lab-slide-up').find('a').attr('data-toggle', 'modal');
+//     $('.lab-slide-up').find('a').attr('data-target', '#lab-slide-bottom-popup');
 //$( $('#div1').html() ).appendTo('#div2')
 
 // QuickEach
@@ -46,7 +59,7 @@ jQuery.fn.quickEach = (function(){
 	
 	   $('.flexslider').flexslider({
     animation: "fade",
-	slideshow: true,                //Should the slider animate automatically by default? (true/false)
+	slideshow: false,                //Should the slider animate automatically by default? (true/false)
         // slideshowSpeed: 3000,           //Set the speed of the slideshow cycling, in milliseconds
         // animationDuration: 500,         //Set the speed of animations, in milliseconds
         directionNav: true, 
@@ -54,7 +67,7 @@ jQuery.fn.quickEach = (function(){
         pauseOnHover: true,
 		prevText: "Previous",           //Set the text for the "previous" directionNav item
         nextText: "Next", 
-        smoothHeight: true
+        smoothHeight: false
   });
 	
 	// Show/Hide Filter Menu

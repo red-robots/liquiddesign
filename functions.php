@@ -14,6 +14,9 @@ if( function_exists('acf_add_options_page') ) {
 	
 }
 
+// if( is_singular('post') ) {
+	add_filter('show_admin_bar', '__return_false');
+// }
 
 /**
  * Theme Functions

@@ -23,6 +23,7 @@
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/js/fancybox/jquery.fancybox-1.3.4.css" />
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/flexslider.css" />
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/colorbox.css" />
+<link href="<?php echo get_template_directory_uri(); ?>/css/all.css" rel="stylesheet">
 
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 <!-- lw1 -->

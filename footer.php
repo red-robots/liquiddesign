@@ -56,7 +56,20 @@
 <?php wp_footer(); ?>
 
 
-   
+  <script type="text/javascript">
+    jQuery(document).ready(function($) {
+ 
+
+
+      // $('.openPanel').click( function() {
+      //   console.log('this works');
+      //   $('.panel').addClass('open');
+      // });
+
+
+
+});
+  </script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
