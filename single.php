@@ -54,7 +54,7 @@ echo '</pre>';
   endwhile; endif; ?>
 
 <div class="panel ">
-  <div type="button" class="closePanel">Close Panal <i class="far fa-times-circle"></i></div>
+  <div type="button" class="closePanel">Close Panel <i class="far fa-times-circle"></i></div>
   <div class="interior">
     <!-- <h1><?php the_title(); ?></h1> -->
     <?php echo $info; ?>

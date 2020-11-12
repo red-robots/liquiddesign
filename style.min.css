@@ -425,9 +425,9 @@ a.filter-btn,a.comment span{text-shadow:0 1px #FFF}
 .featured-banner .cop{color:#fff;line-height:1.2}
 .featured-banner .cop p{font-family:Oswald;font-weight:200}
 .featured-banner .cop p strong{font-family:Oswald;font-weight:bold}
-.featured-banner .cop h1,.featured-banner .cop h2{color:#fff}
+.featured-banner .cop h1,.featured-banner .cop h2{color:#fff;text-transform:uppercase}
 .featured-banner .cop h1{font-size:3rem;font-weight:400;margin:0;font-family:Oswald}
-.featured-banner .cop h2{font-size:2.8rem;font-family:Oswald;font-weight:200;text-transform:lowercase}
+.featured-banner .cop h2{font-size:2.8rem;font-family:Oswald;font-weight:200}
 .featured-banner .mobile{display:none}
 .titlebar{background-color:#fcb134;color:#fff;width:100%;padding:20px 0;margin:10px 0;text-align:center;font-family:Oswald;font-size:20px}
 .page-desc{width:920px;margin:40px auto;font-size:1.3rem;font-weight:300}
