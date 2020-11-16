@@ -34,7 +34,8 @@ query_posts(array(
 /* Say hello to the Loop... */
 
 /* Anything placed in #sort is positioned by jQuery Masonry */ ?>
-<div class="sort">
+<div class="wrap">
+<div class="sortz flexwork">
     
     <?php foreach( $terms as $term ): 
     	$termId = $term->term_id;
@@ -112,7 +113,7 @@ query_posts(array(
     <?php endforeach; //endwhile; ?>
     
 </div><!-- #sort -->
-
+</div><!-- wrap -->
 
     <div class="page-desc center">
         <?php the_content(); ?>
