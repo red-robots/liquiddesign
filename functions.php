@@ -1,4 +1,17 @@
 <?php
+// if on a certain taxonomy archive page, do not limit the posts
+add_action('pre_get_posts', function($query){
+    if (isset($query->query_vars['studio'])) {
+        // add_filter('post_limits', function($limit){
+            
+        //     return '';
+        // });
+        $query->set( 'orderby', 'menu_order' );
+        $query->set( 'order', 'ASC' );
+        $query->set('posts_per_page',-1);
+        return;
+    }
+});
 
 function yoast_add_google_profile( $contactmethods ) {
 	// Add Google Profiles
