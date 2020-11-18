@@ -33,7 +33,7 @@ img, video, embed, object, iframe{
 .post-content img, .feat-img, .entry img, .page-entry img{
 	height: auto !important;
 }
-html, body {height: 100%;}
+// html, body {height: 100%;}
 .image-shower {
 	/*position: absolute; top:0; left: 0;
 	width: 100%;
@@ -547,6 +547,7 @@ img#logo{
 	flex-direction: column;
 	justify-content: flex-end;
 	padding: 0 0 5px 15px;
+	line-height: 1.3;
 	p {
 		margin: 0;
 		padding: 0;
@@ -1791,11 +1792,11 @@ Related Posts and Cat. Posts
 }*/
 .page-entry { padding:20px; font-family: "Oswald", Arial, Helvetica, sans-serif;}
 .about-single-pic { 
-	width: 395px;
+	width: 55%;
 	float:left; 
 	height: auto;
 	@media screen and (max-width: 1125px) {
-		width: 30%;
+		// width: 60%;
 	}
 	@media screen and (max-width: 960px) {
 		
@@ -1817,12 +1818,12 @@ Related Posts and Cat. Posts
 	}
 }
 .about-page-entry { 
-	width: 400px;
+	width: 30%;
 	margin-left: 50px;
 	float: left;
 	padding:20px;
 	@media screen and (max-width: 1125px) {
-		width: 40%;
+		// width: 30%;
 	} 
 	@media screen and (max-width: 960px) {
 		

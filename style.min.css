@@ -51,7 +51,6 @@ body.customize-support{margin:0;padding:0}
 .clearfix{clear:both;float:none;display:block}
 img,video,embed,object,iframe{max-width:100%}
 .post-content img,.feat-img,.entry img,.page-entry img{height:auto !important}
-html,body{height:100%}
 .image-loader{width:100%;margin:50px auto}
 .img-cont img{position:relative;width:100%;height:100%}
 .img-cont img{position:absolute;top:0;left:0;width:100%;height:100%}
@@ -147,7 +146,7 @@ img#logo{margin-bottom:0}
 #site-info{width:100px;height:100px;float:left}
 #site-info img{width:100%}
 #site-info a{width:100px;height:100px;text-decoration:none;display:block}
-.tagline{width:auto;float:left;display:-webkit-box;display:-ms-flexbox;display:flex;font-size:1.1rem;font-weight:300;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;padding:0 0 5px 15px}
+.tagline{width:auto;float:left;display:-webkit-box;display:-ms-flexbox;display:flex;font-size:1.1rem;font-weight:300;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;padding:0 0 5px 15px;line-height:1.3}
 .tagline p{margin:0;padding:0}
 #site-info a:hover{opacity:.75}
 #site-description{font-weight:normal;font-size:12px;text-transform:uppercase;color:#999;margin-top:-5px}
@@ -352,11 +351,11 @@ body.blog #sidebar #s{margin-left:12px;width:210px}
 #sb_instagram .sbi_follow_btn a{width:100%;border-radius:0 !important;background-color:#fcb134 !important}
 #sb_instagram #sbi_load .sbi_follow_btn{width:100%;margin:5px 0 15px 0 !important}
 .page-entry{padding:20px;font-family:"Oswald",Arial,Helvetica,sans-serif}
-.about-single-pic{width:395px;float:left;height:auto}
+.about-single-pic{width:55%;float:left;height:auto}
 .about-single-pic .the-img{width:100%;height:auto}
 .about-single-pic .the-img img{width:100%;height:auto}
 .about-single-pic img{width:100%;height:auto}
-.about-page-entry{width:400px;margin-left:50px;float:left;padding:20px}
+.about-page-entry{width:30%;margin-left:50px;float:left;padding:20px}
 .about-page-entry a{color:#333;text-decoration:underline}
 .leadership-left,.leadership-right{position:relative;line-height:0}
 .leadership-left{width:50%;float:left;display:block}
@@ -458,9 +457,7 @@ a.filter-btn,a.comment span{text-shadow:0 1px #FFF}
 .flexwork{width:100%;clear:both;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch}
 .flexwork .box{-ms-flex-preferred-size:32%;flex-basis:32%;width:auto;margin:0 0 15px 0;padding:0}
 .flexwork .box-content{width:100%}
-@media screen and (max-width:1125px){.about-single-pic{width:30%}
-.about-page-entry{width:40%}
-}@media screen and (max-width:1024px){#sidebar{width:240px}
+@media screen and (max-width:1024px){#sidebar{width:240px}
 .wrap{width:940px}
 .featured-banner .the-image{position:relative}
 }@media screen and (max-width:960px){.featured-banner .blackcover{width:100%;height:100%;position:absolute;z-index:10;background:black;background:-webkit-gradient(linear,left bottom,left top,from(rgba(0,0,0,0.492034)),to(rgba(0,0,0,0.136292)));background:linear-gradient(0,rgba(0,0,0,0.492034) 0,rgba(0,0,0,0.136292) 100%)}

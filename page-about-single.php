@@ -87,7 +87,7 @@ get_header('full'); ?>
 	
         <div class="the-img">
             <?php if ( has_post_thumbnail() ){ 
-                the_post_thumbnail();
+                the_post_thumbnail('full');
             } ?>
         </div>
     
