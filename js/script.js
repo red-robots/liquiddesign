@@ -46,56 +46,56 @@ jQuery.fn.quickEach = (function(){
 }());
 
 (function($) {
-	
+
 	// Responsive Videos
 	$('.vid-container').fitVids();
-	
-	
-	
+
+
+
 // $('.image-shower').html($('.image-loader').html());
 // //$( $('.image-loader').html() ).appendTo('.image-shower')
 // $('.image-loader').html('');
-	
-	
-	   $('.flexslider').flexslider({
-    animation: "fade",
-	slideshow: false,                //Should the slider animate automatically by default? (true/false)
+
+
+	$('.flexslider').flexslider({
+    	animation: "fade",
+		slideshow: true,                //Should the slider animate automatically by default? (true/false)
         // slideshowSpeed: 3000,           //Set the speed of the slideshow cycling, in milliseconds
         // animationDuration: 500,         //Set the speed of animations, in milliseconds
-        directionNav: true, 
+        directionNav: true,
 		 pauseOnAction: true,            //Pause the slideshow when interacting with control elements, highly recommended. (true/false)
         pauseOnHover: true,
 		prevText: "Previous",           //Set the text for the "previous" directionNav item
-        nextText: "Next", 
+        nextText: "Next",
         smoothHeight: false
   });
-	
+
 	// Show/Hide Filter Menu
 	$('#filtering-nav ul').hide();
 	$('a.filter-btn').click(function(){
 		$('#filtering-nav ul').slideToggle();
 		return false;
 	});
-	
-	
+
+
 	///lightbox
-	/* 
+	/*
 		Color Box
 		---------------------
 	*/
-	
-	//  the "inline" allows for all the html you want. 
-	//  you can also change the width here. 
+
+	//  the "inline" allows for all the html you want.
+	//  you can also change the width here.
 	$(".liquidgallery").colorbox({
-		
+
 		rel:'liquidgallery',maxWidth:"75%", maxHeight: "75%", transition:"elastic"
 	});
 
 	$('.gal-work').colorbox({
-	    rel:function() {        
+	    rel:function() {
 	        return $(this).data('rel');
 	    },
-	    maxWidth:"85%", 
+	    maxWidth:"85%",
 	    maxHeight: "85%",
 	});
 
@@ -119,7 +119,7 @@ jQuery.fn.quickEach = (function(){
 	    });
 	});
 
-	/* 
+	/*
 		Lazy Load
 		---------------------
 	*/
@@ -138,36 +138,36 @@ jQuery.fn.quickEach = (function(){
 	});
 
 
-	
-	
+
+
 	// Submenus
-	var submenu_config = {    
-		 over: function(){ $('ul', this).fadeIn(200); },  
+	var submenu_config = {
+		 over: function(){ $('ul', this).fadeIn(200); },
 		 timeout: 300,
-		 out: function(){ $('ul', this).fadeOut(300); }  
+		 out: function(){ $('ul', this).fadeOut(300); }
 	};
 	$('.header-nav ul > li').not(".header-nav ul li li").hoverIntent(submenu_config);
-	
+
 	// Create the dropdown base
 	$("<select />").appendTo(".header-nav");
-	
+
 	// Create default option "Go to..."
 	$("<option />", {
 	   "selected": "selected",
 	   "value"   : "",
 	   "text"    : "Go to..."
 	}).appendTo(".header-nav select");
-	
+
 	// Populate dropdown with menu items
 	$(".header-nav a").each(function() {
 	 	var el = $(this);
-	 	
+
 	 	if( el.parent().parent().hasClass('sub-menu') ){
 	 		var prefix = "- ";
 	 	} else{
 	 		var prefix = '';
 	 	}
-	 	
+
 		$("<option />", {
 		     "value"   : el.attr("href"),
 		     "text"    : prefix + el.text()
@@ -178,22 +178,22 @@ jQuery.fn.quickEach = (function(){
 	$(".header-nav select").change(function() {
         window.location = $(this).find("option:selected").val();
 	});
-	
+
 	// Vertically align header items
 	$(window).load(function(){
 	   $('#site-info, #social-networks, .header-nav ul:not(.sub-menu)').vit();
 	});
-	
+
 	// Sidebar Ads
 	$('.shaken_sidebar_ads a:odd img').addClass('last-ad');
-	
+
 	// Share Icons
 	$('.share-container').hide();
-	
+
 	$('.share').on('click', function(){
-		$('.share-container', $(this).parent()).slideToggle('fast');				   
+		$('.share-container', $(this).parent()).slideToggle('fast');
 	});
-	
+
 	// Display pop-up when clicking on share icons
 	$('.share-window').on('click', function(){
 		var width  = 650;
@@ -213,7 +213,7 @@ jQuery.fn.quickEach = (function(){
 		if (window.focus) {newwin.focus();}
 		return false;
 	});
-	
+
 	// Lightbox Init
 	var fancyboxArgs = {
 	    padding: 0,
@@ -223,10 +223,10 @@ jQuery.fn.quickEach = (function(){
 	};
 	$('.gallery-icon a').attr('rel', 'post-gallery');
 	$("a[rel='gallery'], a[rel='lightbox'], .gallery-icon a, .colorbox").fancybox( fancyboxArgs );
-	
+
 	// Remove margins
 	$('.gallery-thumb:nth-child(3n)').addClass('last');
-	
+
 	// Slider Init
 	$('.slider').slides({
 		play: 9500,
@@ -235,24 +235,24 @@ jQuery.fn.quickEach = (function(){
 		effect: 'fade',
 		generatePagination: false
 	});
-	
+
 	$(window).load(function(){
-		
+
 		// Vertically center all images in the slider
 		$('.slides_container').quickEach(function(){
 			var containerH = this.height();
-			
+
 			$('img', this).quickEach(function(){
-				var imgH = this.height();	
+				var imgH = this.height();
 				if(imgH != containerH){
-					var margin = (containerH - imgH)/2; 
+					var margin = (containerH - imgH)/2;
 					this.css('margin-top', margin);
 				}
 			});
 		});
-		
+
 		setIsotope();
-		
+
 		// Filtering
 		$('#filtering-nav li a').click(function(){
             is_filtering = true;
@@ -261,35 +261,35 @@ jQuery.fn.quickEach = (function(){
 		  	is_filtering = false;
 		  	return false;
 		});
-		
+
 		// Sticky footer
 		stickyFooter();
 	});
-	
+
 	$(window).resize(function(){
         stickyFooter();
         setIsotope();
 	});
 })(jQuery);
 
-// Setup grid structure for blog layout 
+// Setup grid structure for blog layout
 function setIsotope(){
 	if( jQuery(window).width() > mobile_width && !isotope_set){
-        
+
         isotope_set = true;
-        
-		// Isotope Init		
+
+		// Isotope Init
 		jQuery('.sort, #sort').isotope({
 			itemSelector : '.box:not(.invis)',
 			transformsEnabled: false,
 			masonry: {
-				columnWidth : 150 
+				columnWidth : 150
 			},
 			onLayout: function(){
                 centerLayout();
 			}
 		});
-		
+
     }
 }
 
@@ -301,7 +301,7 @@ function centerLayout(){
 
 function stickyFooter(){
     jQuery('#footer').css('position', 'relative');
-    
+
     if( jQuery('body').height() < jQuery(window).height() ){
         jQuery('#footer').css({
             'position': 'fixed',
@@ -315,20 +315,20 @@ function stickyFooter(){
  **************************************** */
   jQuery.Isotope.prototype._getCenteredMasonryColumns = function() {
     this.width = this.element.width();
-    
+
     if( this.element.parent().hasClass('timeline')){
         var parentWidth = page_min_width;
     } else {
         var parentWidth = this.element.parent().width();
     }
-    
+
                   // i.e. options.masonry && options.masonry.columnWidth
     var colW = this.options.masonry && this.options.masonry.columnWidth ||
                   // or use the size of the first item
                   this.$filteredAtoms.outerWidth(true) ||
                   // if there's no items, use size of container
                   parentWidth;
-    
+
     var cols = Math.floor( parentWidth / colW );
     cols = Math.max( cols, 1 );
 
@@ -337,7 +337,7 @@ function stickyFooter(){
     // i.e. this.masonry.columnWidth = ...
     this.masonry.columnWidth = colW;
   };
-  
+
   jQuery.Isotope.prototype._masonryReset = function() {
     // layout-specific props
     this.masonry = {};
@@ -356,7 +356,7 @@ function stickyFooter(){
     this._getCenteredMasonryColumns();
     return ( this.masonry.cols !== prevColCount );
   };
-  
+
   jQuery.Isotope.prototype._masonryGetContainerSize = function() {
     var unusedCols = 0,
         i = this.masonry.cols;
@@ -367,21 +367,21 @@ function stickyFooter(){
       }
       unusedCols++;
     }
-    
+
     if( !is_filtering ){
         var returnWidth = (this.masonry.cols - unusedCols) * this.masonry.columnWidth;
-    
+
         if(returnWidth < page_min_width && jQuery(window).width() > 768){
             returnWidth = page_min_width
         }
-        
+
         current_page_width = returnWidth;
     } else {
         returnWidth = current_page_width;
     }
-    
-    
-    
+
+
+
     return {
           height : Math.max.apply( Math, this.masonry.colYs ),
           // fit container to columns that have been used;
