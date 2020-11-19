@@ -943,6 +943,19 @@ body.blog .wrap, #filtering-nav, body.blog .navigation, .isotope{
 	overflow: hidden;
 	position:relative;
 }
+.box-content.leadership {
+	width: 70%;
+	margin: 0 auto;
+	@media screen and (max-width: 1125px) {
+		width: 100%;
+	}
+	@media screen and (max-width: 960px) {
+		
+	}
+	@media screen and (max-width: 500px) {
+		width: 90%;
+	}
+}
 .layover-destination {
 	position:absolute;
 	right: 0px;
@@ -2661,6 +2674,11 @@ a.filter-btn, a.comment span{
 	}
 	&.center {
 		text-align: center;
+	}
+}
+.box-content {
+	img {
+		height: auto;
 	}
 }
 .single-proj {

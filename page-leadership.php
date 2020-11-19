@@ -37,7 +37,7 @@ get_header('full'); ?>
     <div class="clearfix"></div>
     
     
-        <div class="box-content post">
+        <div class="box-content post leadership">
         	<?php if(have_posts()) : while(have_posts()) : the_post() ?>
 			
 	<div class="leadership-pic">
