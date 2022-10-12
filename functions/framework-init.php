@@ -28,8 +28,8 @@ if (is_admin() && isset($_GET['activated'] ) && $pagenow == "themes.php" ) {
 }
 
 // --------------  Custom Widgets  -------------- 
-include($widgets_path . 'flickr.php');
-include($widgets_path . 'twitter.php');
+//include($widgets_path . 'flickr.php');
+//include($widgets_path . 'twitter.php');
 include($widgets_path . 'category-posts.php');
 include($widgets_path . 'testimonials.php');
 include($widgets_path . 'related-posts.php');
