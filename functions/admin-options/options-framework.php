@@ -39,16 +39,16 @@ if ( !function_exists( 'add_action' ) ) {
 
 /* If the user can't edit theme options, no use running this plugin */
 
-add_action('init', 'optionsframework_rolescheck' );
+//add_action('init', 'optionsframework_rolescheck' );
 
-function optionsframework_rolescheck () {
+//function optionsframework_rolescheck () {
 	//if ( current_user_can( 'edit_theme_options' ) ) {
 		// If the user can edit theme options, let the fun begin!
-		add_action( 'admin_menu', 'optionsframework_add_page');
-		add_action( 'admin_init', 'optionsframework_init' );
-		add_action( 'admin_init', 'optionsframework_mlu_init' );
+		//add_action( 'admin_menu', 'optionsframework_add_page');
+		//add_action( 'admin_init', 'optionsframework_init' );
+		//add_action( 'admin_init', 'optionsframework_mlu_init' );
 	//}
-}
+//}
 
 /* Register plugin activation hooks */
 
