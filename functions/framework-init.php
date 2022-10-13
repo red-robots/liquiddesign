@@ -30,12 +30,12 @@ if (is_admin() && isset($_GET['activated'] ) && $pagenow == "themes.php" ) {
 // --------------  Custom Widgets  -------------- 
 //include($widgets_path . 'flickr.php');
 //include($widgets_path . 'twitter.php');
-include($widgets_path . 'category-posts.php');
-include($widgets_path . 'testimonials.php');
-include($widgets_path . 'related-posts.php');
-include($widgets_path . 'popular-posts.php');
-include($widgets_path . 'share.php');
-include($widgets_path . 'ads.php');
+//include($widgets_path . 'category-posts.php');
+//include($widgets_path . 'testimonials.php');
+//include($widgets_path . 'related-posts.php');
+//include($widgets_path . 'popular-posts.php');
+//include($widgets_path . 'share.php');
+//include($widgets_path . 'ads.php');
 
 // --------------  Custom Post Fields -------------- 
 if( current_user_can( 'edit_posts' ) && is_admin()){
