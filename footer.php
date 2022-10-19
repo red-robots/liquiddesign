@@ -18,7 +18,7 @@
    <?php wp_reset_query(); // have to reset the query to query if is front page or not.?>
     <?php if (is_front_page()) { ?>
     <div class="facebook"><a target="_blank" href="http://www.facebook.com/liquiddesignarchitecture">Like Liquid Design on Facebook</a></div>
-    <div class="instagram"><a target="_blank" href="https://www.instagram.com/liquid_design_" rel="publisher">Follow Liquid Design on instagram</a></div>
+    <div class="instagram"><a target="_blank" href="https://www.instagram.com/liquiddesignarchitecture/" rel="publisher">Follow Liquid Design on instagram</a></div>
      <div class="copyright" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Liquid Design</span> <?php _e('Copyright', 'LiquidDesign'); ?> &copy; <?php echo date('Y'); ?></div>
     <?php } else { ?>
    
